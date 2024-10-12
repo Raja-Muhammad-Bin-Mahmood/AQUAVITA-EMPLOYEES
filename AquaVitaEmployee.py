@@ -6,15 +6,15 @@ import time
 # Set up the page
 st.set_page_config(layout="wide")
 
-# Styling with a dark water theme and white headers
+# Styling with a dark water theme and rounded elements
 st.markdown("""
     <style>
     body {background-color: #0f1a2b;}
     .stText {color: #d1e8ff; font-family: 'Arial', sans-serif;}
     .stBox {background-color: #1b2a3b; border-radius: 20px; padding: 20px; color: #ffffff;}
+    .stGreenBox {background-color: #28a745; border-radius: 15px; padding: 20px; color: #ffffff;}
     .stTitle {font-size: 2.5em; font-weight: bold; text-align: center; color: #d1e8ff;}
-    .stBorder {border: 2px solid #d1e8ff; border-radius: 10px; padding: 10px; margin-bottom: 20px; background-color: #1b2a3b;}
-    .stHeader {background-color: #ffffff; color: #1b2a3b; padding: 10px; border-radius: 10px; font-weight: bold; text-align: center;}
+    .stBorder {border: 2px solid #d1e8ff; border-radius: 10px; padding: 10px; margin-bottom: 20px;}
     .bold-text {font-weight: bold; font-size: 1.2em;}
     </style>
 """, unsafe_allow_html=True)
@@ -63,7 +63,7 @@ def display_data():
         maintenance_hydroflow = "Last maintenance on October 5, 2024. Next maintenance due on March 10, 2025."
 
         with col1:
-            st.markdown('<div class="stBox stBorder"><h3 class="stHeader">Osmosis Reactor</h3>', unsafe_allow_html=True)
+            st.markdown('<div class="stBox stBorder"><h3>Osmosis Reactor</h3>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Flow Rate: {random.randint(400, 500)} Liters/day</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Temperature: {temp_c} °C</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Humidity: {humidity}%</p>', unsafe_allow_html=True)
@@ -75,7 +75,7 @@ def display_data():
             st.markdown('<h4 class="stTitle">REAL-TIME DATA</h4>', unsafe_allow_html=True)
 
         with col2:
-            st.markdown('<div class="stBox stBorder"><h3 class="stHeader">AquaGuard Filter</h3>', unsafe_allow_html=True)
+            st.markdown('<div class="stBox stBorder"><h3>AquaGuard Filter</h3>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Flow Rate: {random.randint(350, 450)} Liters/day</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Temperature: {temp_c} °C</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Humidity: {humidity}%</p>', unsafe_allow_html=True)
@@ -87,7 +87,7 @@ def display_data():
             st.markdown('<h4 class="stTitle">REAL-TIME DATA</h4>', unsafe_allow_html=True)
 
         with col3:
-            st.markdown('<div class="stBox stBorder"><h3 class="stHeader">HydroFlow Unit</h3>', unsafe_allow_html=True)
+            st.markdown('<div class="stBox stBorder"><h3>HydroFlow Unit</h3>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Flow Rate: {random.randint(380, 480)} Liters/day</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Temperature: {temp_c} °C</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="bold-text">Humidity: {humidity}%</p>', unsafe_allow_html=True)
