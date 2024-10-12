@@ -49,9 +49,9 @@ def display_data():
         humidity = weather_data['main']['humidity']
         weather_desc = weather_data['weather'][0]['description'].capitalize()
     else:
-        temp_c = random.uniform(22.0, 25.0)
-        humidity = random.randint(60, 80)
-        weather_desc = "No data"
+        temp_c = "API Access Denied"
+        humidity = "API Access Denied"
+        weather_desc = "API Access Denied"
 
     with placeholder.container():
         # Create three columns for three different filtration systems
