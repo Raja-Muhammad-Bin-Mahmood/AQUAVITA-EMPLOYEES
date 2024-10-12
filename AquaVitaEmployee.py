@@ -20,7 +20,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title with custom font
-st.markdown('<h1 class="stTitle">Water Filtration Plants PD Khan Thill Sharif</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="stTitle">Water Filtration Plants PD Khan</h1>', unsafe_allow_html=True)
 
 # Weather API setup (OpenWeatherMap)
 api_key = "ec5dff3620be8d025f51f648826a4ada"  # Replace this with your OpenWeather API key
