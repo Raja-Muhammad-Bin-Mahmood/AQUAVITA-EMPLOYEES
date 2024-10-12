@@ -23,7 +23,7 @@ st.markdown("""
 st.markdown('<h1 class="stTitle">Water Filtration Plants PD Khan</h1>', unsafe_allow_html=True)
 
 # Weather API setup (OpenWeatherMap)
-api_key = "7d960849d52d3a0bb8023d9225634324"  # Replace this with your OpenWeather API key
+api_key = "ec5dff3620be8d025f51f648826a4ada"  # Replace this with your OpenWeather API key
 latitude = 32.6970
 longitude = 73.3252
 
